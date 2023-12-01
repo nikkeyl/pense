@@ -1,0 +1,355 @@
+//========================================================================================================================================================//
+.link {
+    $animation: 0;
+
+    display: flex;
+    align-items: center;
+    gap: rem(12);
+
+    span {
+        font-size: rem(24);
+        line-height: 100%;
+        color: $color-FF7235;
+        transition: all 0.3s ease;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &__icon {
+        @include wh(rem(24), rem(24));
+
+        fill: none;
+        stroke: $color-FF7235;
+        transition: all 0.3s ease;
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            span {
+                color: $color-292830;
+            }
+
+            .link__icon {
+                stroke: $color-292830;
+            }
+        }
+    }
+}
+
+//========================================================================================================================================================//
+
+//========================================================================================================================================================//
+
+//========================================================================================================================================================//
+.title {
+    @include adaptive-value("font-size", 96, 40);
+
+    max-width: rem(540);
+    font-weight: 700;
+    line-height: 100%;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--big {
+        max-width: rem(730);
+    }
+}
+
+//========================================================================================================================================================//
+.text {
+    @include adaptive-value("font-size", 24, 16);
+
+    line-height: math.div(39, 24);
+    color: $color-BDBDBD;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+//========================================================================================================================================================//
+.advantage {
+    @include adaptive-value("padding-top", 63, 5, 1440, 992, 1);
+    @include adaptive-value("padding-bottom", 63, 5, 1440, 992, 1);
+    @include adaptive-value("padding-right", 65, 5, 1440, 992, 1);
+    @include adaptive-value("padding-left", 65, 5, 1440, 992, 1);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: rem(12);
+    max-width: rem(350);
+    background-color: $color-FFFFFF;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+
+    &__icon {
+        @include wh(rem(64), rem(64));
+
+        display: flex;
+        flex: 0 0 rem(64);
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgb(226 89 139 / 5%);
+
+        svg {
+            @include wh(rem(24), rem(24));
+
+            fill: #E2598B;
+        }
+
+        &--orange {
+            background-color: rgb(255 189 116 / 5%);
+
+            svg {
+                fill: #FFBD74;
+            }
+        }
+
+        &--purple {
+            background-color: rgb(77 18 238 / 5%);
+
+            svg {
+                fill: #4D12EE;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        font-weight: 500;
+        font-size: rem(30);
+        line-height: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: em(12, 30);
+        }
+    }
+
+    &__sub-title {
+        flex: 1 1 auto;
+        max-width: rem(250);
+        font-size: rem(14);
+        line-height: math.div(23, 14);
+        text-align: center;
+        color: $color-BDBDBD;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: em(24, 14);
+        }
+    }
+
+    &__button {
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s ease;
+
+        svg {
+            @include wh(rem(24), rem(24));
+        }
+
+        @media (min-width: $tablet) {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            .advantage__title {
+                color: #E2598B;
+            }
+
+            .advantage__title--orange {
+                color: rgb(255 189 116);
+            }
+
+            .advantage__title--purple {
+                color: rgb(77 18 238);
+            }
+        }
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            box-shadow: 0 0 rem(50) rgb(0 0 0 / 4%);
+
+            .advantage__button {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+//========================================================================================================================================================//
+.label {
+    @include adaptive-value("font-size", 22, 18);
+
+    line-height: math.div(36, 22);
+    text-transform: uppercase;
+    color: $color-BDBDBD;
+}
+
+//========================================================================================================================================================//
+.plan-card {
+    border: rem(1) solid #F5F5F5;
+    border-radius: rem(12);
+    padding: rem(40) rem(40) rem(60);
+    max-width: rem(350);
+    transition: all 0.3s ease;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__icon {
+        @include wh(rem(24), rem(24));
+
+        fill: #3EC1F3;
+
+        &--orange {
+            fill: $color-FF7235;
+        }
+
+        &--purple {
+            fill: #4D12EE;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: rem(32);
+        line-height: math.div(52, 32);
+
+        &:not(:last-child) {
+            margin-bottom: em(24, 32);
+        }
+    }
+
+    &__list {
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: rem(8);
+
+        span {
+            font-size: rem(18);
+            line-height: math.div(29, 18);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: rem(8);
+        }
+    }
+
+    &__check {
+        @include wh(rem(24), rem(24));
+
+        fill: $color-BDBDBD;
+    }
+
+    &__price {
+        position: relative;
+        flex: 1 1 auto;
+        font-weight: 600;
+        font-size: rem(24);
+        line-height: math.div(39, 24);
+
+        &::after {
+            @include pseudo("up to 3 user + 1.99 per user");
+
+            font-weight: 400;
+            font-size: rem(12);
+            line-height: math.div(19, 12);
+            color: $color-BDBDBD;
+        }
+
+        span {
+            font-weight: 300;
+            font-size: rem(20);
+            line-height: math.div(32, 20);
+            color: $color-BDBDBD;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: em(59, 24);
+        }
+    }
+
+    &__button {
+        align-self: flex-start;
+        transition: all 0.3s ease;
+
+        svg {
+            @include wh(rem(24), rem(24));
+
+            fill: $color-FF7235;
+            transition: all 0.3s ease;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                svg {
+                    fill: $color-FFFFFF;
+                }
+            }
+        }
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            box-shadow: 0 0 rem(50) rgb(0 0 0 / 4%);
+        }
+    }
+}

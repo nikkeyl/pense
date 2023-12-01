@@ -1,0 +1,25 @@
+$max-width-container    : 1110;
+$container-padding      : 30;
+//---------------------------------//
+$max-width              : 1440;
+$min-width              : 320;
+//---------------------------------//
+$container-width        : $max-width-container + $container-padding;
+$pc                     : em($container-width);
+$tablet                 : em(992);
+$mobile                 : em(768);
+$mobile-small           : em(480);
+//---------------------------------//
+$main-font-family       : 'Hind Siliguri';
+$main-font-weight       : 400;
+$main-font-size         : rem(24);
+$main-background-color  :#FFF;
+$main-font-color        :#223;
+$a-focus-active-outline : 0;
+$focus-active-outline   : 1;
+//---------------------------------//
+$color-000000           :#000;
+$color-FFFFFF           :#FFF;
+$color-292830           :#223;
+$color-BDBDBD           :#BBB;
+$color-FF7235           :#F73;

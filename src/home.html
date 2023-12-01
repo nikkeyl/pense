@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/components/_head.htm',{"title":"Pense"})
+    <body class="page">
+        <div class="scaffold">
+            @@include('html/components/_header.htm',{})
+            <main class="content">
+                <section class="home">
+                    <div class="home__container">
+                        <div class="home__body">
+                            @@include('html/modules/_title.htm',{
+                            "class":" home__title",
+                            "title":"Track your Expenses & Save Money",
+                            "tag":"h1"
+                            })
+                            <div data-watch class="text home__text rise">
+                                Helps you to organize your income and expenses
+                            </div>
+                            <div data-watch class="home__actions rise">
+                                <a href="#" class="button button--big">
+                                    <span>Request a demo</span>
+                                    <svg class="button__icon">
+                                        <use href="@content/icons/sprite.svg#svg-arr-down"></use>
+                                    </svg>
+                                </a>
+                                <span class="text">Web, iOS and Android</span>
+                            </div>
+                        </div>
+                        <div data-watch title="work" class="home__img rise">
+                            <img data-prlx-mouse data-prlx-dxr data-prlx-dyr data-prlx-a="15" src="@content/svg/illustrations/Illustration01.svg" alt="Illustration" />
+                        </div>
+                    </div>
+                </section>
+                <div data-watch="navigator" data-watch-threshold="0.1" data-prlx-mouse-wrapper class="features">
+                    <img data-prlx-mouse data-prlx-dyr data-prlx-a="20" data-src="@content/svg/decorations/vector01.svg" class="features__decor--1" alt="decor">
+                    <img data-prlx-mouse data-prlx-dxr data-prlx-a="20" data-src="@content/svg/decorations/vector02.svg" class="features__decor--2" alt="decor">
+                    <div class="features__container">
+                        <div class="features__body">
+                            <div class="features__image-ibg">
+                                <img data-watch data-src="@content/img/app/app.jpg" class="rise" alt="app">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__partners partners">
+                        <div class="partners__container">
+                            <img data-watch data-src="@content/img/sponsors/facebook.png" class="rise" alt="facebook">
+                            <img data-watch data-src="@content/img/sponsors/google.png" class="rise" alt="google">
+                            <img data-watch data-src="@content/img/sponsors/cocacola.png" class="rise" alt="cocacola">
+                            <img data-watch data-src="@content/img/sponsors/linkedin.png" class="rise" alt="linkedin">
+                            <img data-watch data-src="@content/img/sponsors/samsung.png" class="rise" alt="samsung">
+                        </div>
+                    </div>
+                </div>
+                <div data-watch="navigator" data-watch-threshold="0.1" class="about-us">
+                    <section data-prlx-mouse-wrapper class="support">
+                        <div class="support__container">
+                            <div class="support__body">
+                                <div data-watch class="label rise support__label">Alwalys online</div>
+                                @@include('html/modules/_title.htm',{
+                                "class":" support__title",
+                                "title":"Real-time support with cloud",
+                                "tag":"h2"
+                                })
+                                <div data-watch class="text rise support__text">
+                                    Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.
+                                </div>
+                                <a href="#" aria-label="learn more" data-watch class="link support__link rise">
+                                    <span>Learn more</span>
+                                    <svg class="link__icon">
+                                        <use href="@content/icons/sprite.svg#svg-arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div data-watch class="support__img rise">
+                                <img data-prlx-mouse data-prlx-dxr data-prlx-dyr data-prlx-a="15" data-src="@content/svg/illustrations/Illustration02.svg" alt="Illustration" />
+                            </div>
+                        </div>
+                    </section>
+                    <section data-prlx-mouse-wrapper class="support support--reverse">
+                        <div class="support__container support__container--reverse">
+                            <div class="support__body">
+                                <div data-watch class="label rise support__label">free some cost</div>
+                                @@include('html/modules/_title.htm',{
+                                "class":" support__title",
+                                "title":"Save cost for you and family",
+                                "tag":"h3"
+                                })
+                                <div data-watch class="text rise support__text">
+                                    Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.
+                                </div>
+                                <a href="#" aria-label="learn more" data-watch class="link support__link rise">
+                                    <span>Learn more</span>
+                                    <svg class="link__icon">
+                                        <use href="@content/icons/sprite.svg#svg-arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div data-watch class="support__img rise">
+                                <img data-prlx-mouse data-prlx-dxr data-prlx-dyr data-prlx-a="15" data-src="@content/svg/illustrations/Illustration03.svg" alt="Illustration" />
+                            </div>
+                        </div>
+                    </section>
+                    <section data-prlx-mouse-wrapper class="support">
+                        <div class="support__container">
+                            <div class="support__body">
+                                <div data-watch class="label rise support__label">Use anytime</div>
+                                @@include('html/modules/_title.htm',{
+                                "class":" support__title",
+                                "title":"Use anytime when you need",
+                                "tag":"h4"
+                                })
+                                <div data-watch class="text rise support__text">
+                                    Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.
+                                </div>
+                                <a href="#" aria-label="learn more" data-watch class="link support__link rise">
+                                    <span>Learn more</span>
+                                    <svg class="link__icon">
+                                        <use href="@content/icons/sprite.svg#svg-arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div data-watch class="support__img rise">
+                                <img data-prlx-mouse data-prlx-dxr data-prlx-dyr data-prlx-a="15" data-src="@content/svg/illustrations/Illustration04.svg" alt="Illustration" />
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <section class="advantages">
+                    <div class="advantages__container">
+                        <div class="advantages__info">
+                            @@include('html/modules/_title.htm',{
+                            "class":" title--big advantages__title",
+                            "title":"The Product we work with.",
+                            "tag":"h5"
+                            })
+                            <div data-watch class="text rise advantages__text">
+                                <p>Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim aumsan nisi, tincidunt vel. Enim ipsum, at quis ullamcorper eget ut.</p>
+                            </div>
+                        </div>
+                        <div class="advantages__cards">
+                            <div data-watch class="advantage rise">
+                                <div class="advantage__icon advantage__icon--orange">
+                                    <svg>
+                                        <use href="@content/icons/sprite.svg#svg-phone-link"></use>
+                                    </svg>
+                                </div>
+                                <div class="advantage__body">
+                                    <a href="#" aria-label="title" class="advantage__title advantage__title--orange">Cross platform</a>
+                                    <div class="advantage__sub-title">Elit esse cillum dolore eu fugiat nulla pariatur</div>
+                                    <a href="#" aria-label="button" class="advantage__button">
+                                        <svg>
+                                            <use href="@content/icons/sprite.svg#svg-arrow-bold"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="#" aria-label="link" class="advantage__link"></a>
+                            </div>
+                            <div data-watch class="advantage rise">
+                                <div class="advantage__icon">
+                                    <svg>
+                                        <use href="@content/icons/sprite.svg#svg-cloud"></use>
+                                    </svg>
+                                </div>
+                                <div class="advantage__body">
+                                    <a href="#" aria-label="title" class="advantage__title">Cloud server</a>
+                                    <div class="advantage__sub-title">Elit esse cillum dolore eu fugiat nulla pariatur</div>
+                                    <a href="#" aria-label="button" class="advantage__button">
+                                        <svg>
+                                            <use href="@content/icons/sprite.svg#svg-arrow-bold"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="#" aria-label="link" class="advantage__link"></a>
+                            </div>
+                            <div data-watch class="advantage rise">
+                                <div class="advantage__icon advantage__icon--purple">
+                                    <svg>
+                                        <use href="@content/icons/sprite.svg#svg-backpack"></use>
+                                    </svg>
+                                </div>
+                                <div class="advantage__body">
+                                    <a href="#" aria-label="title" class="advantage__title advantage__title--purple">Pure Javascript</a>
+                                    <div class="advantage__sub-title">Elit esse cillum dolore eu fugiat nulla pariatur</div>
+                                    <a href="#" aria-label="button" class="advantage__button">
+                                        <svg>
+                                            <use href="@content/icons/sprite.svg#svg-arrow-bold"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="#" aria-label="link" class="advantage__link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section data-watch="navigator" data-watch-threshold="0.1" class="pricing">
+                    <div class="pricing__container">
+                        @@include('html/modules/_title.htm',{
+                        "class":" pricing__title",
+                        "title":"Choose your flexible plan.",
+                        "tag":"h5"
+                        })
+                        <div class="pricing__plans">
+                            <div data-watch class="plan-card pricing__plan-card rise">
+                                <div class="plan-card__inner">
+                                    <svg class="plan-card__icon">
+                                        <use href="@content/icons/sprite.svg#svg-starter-plan"></use>
+                                    </svg>
+                                    <div class="plan-card__title">Starter Plan</div>
+                                    <ul class="plan-card__list">
+                                        <li class="plan-card__item">
+                                            <svg class="plan-card__check">
+                                                <use href="@content/icons/sprite.svg#svg-check"></use>
+                                            </svg>
+                                            <span>Store unlimited data</span>
+                                        </li>
+                                        <li class="plan-card__item">
+                                            <svg class="plan-card__check">
+                                                <use href="@content/icons/sprite.svg#svg-check"></use>
+                                            </svg>
+                                            <span>Export to pdf, xls, csv</span>
+                                        </li>
+                                        <li class="plan-card__item">
+                                            <svg class="plan-card__check">
+                                                <use href="@content/icons/sprite.svg#svg-check"></use>
+                                            </svg>
+                                            <span>Cloud server support</span>
+                                        </li>
+                                    </ul>
+                                    <div class="plan-card__price">$9.99/<span>year</span></div>
+                                    <a href="#" aria-label="get this" class="plan-card__button button">
+                                        <span>Get this</span>
+                                        <svg>
+                                            <use href="@content/icons/sprite.svg#svg-arrow-bold"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div data-watch class="plan-card pricing__plan-card rise">
+                                <div class="plan-card__inner">
+                                    <svg class="plan-card__icon plan-card__icon--orange">
+                                        <use href="@content/icons/sprite.svg#svg-silver-plan"></use>
+                                    </svg>
+                                    <div class="plan-card__title">Sliver Plan</div>
+                                    <ul class="plan-card__list">
+                                        <li class="plan-card__item">
+                                            <svg class="plan-card__check">
+                                                <use href="@content/icons/sprite.svg#svg-check"></use>
+                                            </svg>
+                                            <span>Store unlimited data</span>
+                                        </li>
+                                        <li class="plan-card__item">
+                                            <svg class="plan-card__check">
+                                                <use href="@content/icons/sprite.svg#svg-check"></use>
+                                            </svg>
+                                            <span>Export to pdf, xls, csv</span>
+                                        </li>
+                                        <li class="plan-card__item">
+                                            <svg class="plan-card__check">
+                                                <use href="@content/icons/sprite.svg#svg-check"></use>
+                                            </svg>
+                                            <span>Cloud server support</span>
+                                        </li>
+                                    </ul>
+                                    <div class="plan-card__price">$19.99/<span>year</span></div>
+                                    <a href="#" aria-label="get this" class="plan-card__button button">
+                                        <span>Get this</span>
+                                        <svg>
+                                            <use href="@content/icons/sprite.svg#svg-arrow-bold"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div data-watch class="plan-card pricing__plan-card rise">
+                                <div class="plan-card__inner">
+                                    <svg class="plan-card__icon plan-card__icon--purple">
+                                        <use href="@content/icons/sprite.svg#svg-diamond-plan"></use>
+                                    </svg>
+                                    <div class="plan-card__title">Diamond Plan</div>
+                                    <ul class="plan-card__list">
+                                        <li class="plan-card__item">
+                                            <svg class="plan-card__check">
+                                                <use href="@content/icons/sprite.svg#svg-check"></use>
+                                            </svg>
+                                            <span>Store unlimited data</span>
+                                        </li>
+                                        <li class="plan-card__item">
+                                            <svg class="plan-card__check">
+                                                <use href="@content/icons/sprite.svg#svg-check"></use>
+                                            </svg>
+                                            <span>Export to pdf, xls, csv</span>
+                                        </li>
+                                        <li class="plan-card__item">
+                                            <svg class="plan-card__check">
+                                                <use href="@content/icons/sprite.svg#svg-check"></use>
+                                            </svg>
+                                            <span>Cloud server support</span>
+                                        </li>
+                                    </ul>
+                                    <div class="plan-card__price">$29.99/<span>year</span></div>
+                                    <a href="#" aria-label="get this" class="plan-card__button button">
+                                        <span>Get this</span>
+                                        <svg>
+                                            <use href="@content/icons/sprite.svg#svg-arrow-bold"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section data-watch="navigator" data-watch-threshold="0.1" class="feedback">
+                    <div class="feedback__container">
+                        @@include('html/modules/_title.htm',{
+                        "class":" feedback__title",
+                        "title":"We have millions of best wishers",
+                        "tag":"h6"
+                        })
+                        <div data-watch class="feedback__slider rise swiper">
+                            <div class="feedback__wrapper swiper-wrapper">
+                                <div class="feedback__slide slide-feedback swiper-slide">
+                                    <div class="slide-feedback__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.</div>
+                                    <div class="slide-feedback__info">
+                                        <div class="slide-feedback__avatar">
+                                            <img data-src="@content/img/testimonials/avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="slide-feedback__name">Cameron Williamson, <span>CEO</span></div>
+                                    </div>
+                                </div>
+                                <div class="feedback__slide slide-feedback slide-feedback--lightblue swiper-slide">
+                                    <div class="slide-feedback__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.</div>
+                                    <div class="slide-feedback__info">
+                                        <div class="slide-feedback__avatar">
+                                            <img data-src="@content/img/testimonials/avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="slide-feedback__name">Cameron Williamson, <span>CEO</span></div>
+                                    </div>
+                                </div>
+                                <div class="feedback__slide slide-feedback slide-feedback--orange swiper-slide">
+                                    <div class="slide-feedback__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.</div>
+                                    <div class="slide-feedback__info">
+                                        <div class="slide-feedback__avatar">
+                                            <img data-src="@content/img/testimonials/avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="slide-feedback__name">Cameron Williamson, <span>CEO</span></div>
+                                    </div>
+                                </div>
+                                <div class="feedback__slide slide-feedback swiper-slide">
+                                    <div class="slide-feedback__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.</div>
+                                    <div class="slide-feedback__info">
+                                        <div class="slide-feedback__avatar">
+                                            <img data-src="@content/img/testimonials/avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="slide-feedback__name">Cameron Williamson, <span>CEO</span></div>
+                                    </div>
+                                </div>
+                                <div class="feedback__slide slide-feedback slide-feedback--lightblue swiper-slide">
+                                    <div class="slide-feedback__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.</div>
+                                    <div class="slide-feedback__info">
+                                        <div class="slide-feedback__avatar">
+                                            <img data-src="@content/img/testimonials/avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="slide-feedback__name">Cameron Williamson, <span>CEO</span></div>
+                                    </div>
+                                </div>
+                                <div class="feedback__slide slide-feedback slide-feedback--orange swiper-slide">
+                                    <div class="slide-feedback__text">Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.</div>
+                                    <div class="slide-feedback__info">
+                                        <div class="slide-feedback__avatar">
+                                            <img data-src="@content/img/testimonials/avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="slide-feedback__name">Cameron Williamson, <span>CEO</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-prlx-mouse-wrapper class="download">
+                    <div class="download__container">
+                        <div class="download__body">
+                            @@include('html/modules/_title.htm',{
+                            "class":" download__title",
+                            "title":"20M+ downloaded from 32 diffrent countires",
+                            "tag":"h6"
+                            })
+                            <div data-watch class="download__sub-title rise">Try demo for 7 days with full features.</div>
+                            <a href="#" data-watch class="download__button button button--big rise">
+                                <span>Try free demo</span>
+                                <svg class="button__icon">
+                                    <use href="@content/icons/sprite.svg#svg-arr-down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <img data-prlx-mouse data-prlx-dyr data-prlx-a="20" data-src="@content/svg/decorations/vector03.svg" class="download__decoration--1" alt="decor">
+                    <img data-prlx-mouse data-prlx-dxr data-prlx-a="20" data-src="@content/svg/decorations/vector04.svg" class="download__decoration--2" alt="decor">
+                    <img data-prlx-mouse data-prlx-dxr data-prlx-a="15" data-src="@content/svg/illustrations/Illustration05.svg" class="download__illustration--1" alt="Illustration">
+                    <img data-prlx-mouse data-prlx-dyr data-prlx-a="15" data-src="@content/svg/illustrations/Illustration06.svg" class="download__illustration--2" alt="Illustration">
+                </section>
+            </main>
+            @@include('html/components/_footer.htm',{})
+        </div>
+        @@include('html/components/_js.htm',{})
+    </body>
+</html>

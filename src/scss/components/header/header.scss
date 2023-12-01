@@ -1,0 +1,70 @@
+@import "./menu";
+@import "./icon-menu";
+
+//HEADER========================================================================================================================================================//
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 90;
+    padding: rem(10) 0;
+    width: 100%;
+    background-color: $color-FFFFFF;
+
+    &__container {
+        @include adaptive-value("min-height", 142, 42);
+        @include adaptive-value("gap", 30, 10);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s ease;
+
+        .header-scroll & {
+            min-height: rem(42);
+        }
+    }
+
+    &.header-scroll {
+        top: -100%;
+        transition: all 0.8s ease;
+
+        .lock & {
+            transition: none;
+        }
+    }
+
+    &.header-show {
+        top: 0;
+        transition: all 0.3s ease;
+    }
+
+    .lock & {
+        transition: none;
+    }
+}
+
+.logo {
+    img {
+        @include wh(rem(112), rem(40));
+    }
+}
+
+.actions {
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: rem(15);
+
+    &__icon {
+        flex: 0 0 rem(30);
+    }
+
+    &__button {
+        @media (max-width: $mobile) {
+            position: relative;
+            z-index: 5;
+        }
+    }
+}
